@@ -18,7 +18,7 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
+	margin: 25;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -184,7 +184,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2rem 0;
+		margin: 20;
 	}
 
 		p.major {
@@ -3001,11 +3001,11 @@ input, select, textarea {
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: transparent;;
 		}
 
 		table tbody tr.alt {
-			background-color: rgba(0, 0, 0, 0.05) !important;
+			background-color: transparent;;
 		}
 
 	table th {
