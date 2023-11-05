@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Bay Area Motoroads</title>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+
+
+    <body>
+
+        
+        <header>
+            <h1>
+            <a href="https://advkat.github.io/Portfolio/Portfolio">&nbsp; &nbsp; &#8617;</a>
+            <br>
+        </header>
+
+        <main>
+            <center>
+            <a href="#moto_detail" class="button big wide smooth-scroll-middle">View Details</a>
+            <br>
+            <br>
+            <iframe width="1000px" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+            src="https://experience.arcgis.com/experience/f0e05ebee3e444a185951bdfd6155a10"></iframe>
+            <br>
+            
+            </center>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <section class="wrapper style3 align-center">
+                <h1>Project:
+                <br>Bay Area Motoroads 
+                </h1>
+                <br>
+                <h2  id="moto_detail">Introduction</h2>
+                    <p>The goal of the workflow is to create a project that visualizes multiple datasets via an 
+                    embedded Experience Builder web application. Experience Builder is an out of the box ESRI tool 
+                    that facilitates the creation of dashboards, maps and other configurable data dissemination 
+                    tools. I utilized this project to improve on my familiarity using experience builder, 
+                    leveraging QGIS plugins and webpage development.</p>
+
+                <h2>Study Area</h2>
+                    <p>The area that I selected to observe is the Northern region of the Bay Area in California. 
+                    The study area spans across Sonoma, Marin, Lake, Napa, Solano and Yolo counties. These counties 
+                    are known for agriculture, open space and excellent motorcycling roads.</p>
+
+                <h2>Data and Data Processing</h2>
+                    <p>The shapefiles were originally downloaded using the QGIS plugin for Open Street Maps. 
+                    I selected my personal favorite motorcycling roads individually and integrated them 
+                    into new layers. Trimming and appending lines was necessary to allow for longer 
+                    sections of road and consistent attribute allocation. Once all of the roads were 
+                    selected, I merged the road layers into one layer and added fields for pavement 
+                    and type. Pavement type indicated road surface using qualitative observations 
+                    from the field and includes if the road is unpaved. Unknown pavement is listed 
+                    simply as "paved". I also added a new field for "type" which reflects the ideal style 
+                    of motorcycle for that particular road. This was based on personal opinion and attributes
+                    including pavement surface, visual curve analysis and personal opinion.  One example of this
+                    is roads that contain unpaved or rough roads were selected as “Dual Sport”. 
+                    Dual Sport refers to a motorcycle that is capable of both on and off road riding.</p>
+ 
+                <h2>Methods</h2> 
+                    <p>Once the layer was prepared, I upload it to ArcGIS Online where I changed 
+                    the settings to make the map available for public viewing. The Motoroads map was then
+                    seamlessly imported into ESRI Experience Builder.
+                    I developed the map with the perspective that users could utilize this tool to explore and 
+                    learn about new roads with a lens that is specific to motorcycling. I wanted to make the 
+                    tool easy and fun to use, informative and simple in design. I used the filters widget to 
+                    help users see roads that they will be most interested in with the toggle of a filter.</p>
+                    
+                <h2>Results</h2>
+                    <p>The web page shows a map on the right. 
+                    Selected motorcycling roads are highlighted and symbolized by the type of pavement 
+                    or unpaved. On the left is the symbology and a filter to toggle the best roads for 
+                    that the type of riding. Below is a detailed view of the attributes related to that 
+                    segment of road. The user can explore my favorite motorcycling roads in the bay area 
+                    and get an idea of new locations to explore for themselves. The webpage works on both 
+                    Edge and Chrome. The webpage also works on Chrome mobile, however the toggles are too 
+                    small to select on a touchscreen and I plan to adjust this in the future.</p>
+                    
+                    <h2>References</h2>
+                    <li>https://qgis-documentation.readthedocs.io/en/latest/plugins/plugins_openstreetmap.html</li>
+                    <li>https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview</li>
+                    <li>https://www.qgis.org/en/site/</li>
+
+            </section>
+
+        </main>
+        
+        
+        <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		
+    </body>
+    </html>
